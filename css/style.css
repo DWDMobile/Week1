@@ -1,0 +1,280 @@
+
+
+/*********************************************
+ * GLOBAL
+ *********************************************/
+
+body, html {
+	overflow: hidden;
+	font-family: "Roboto";
+	color: #393637;
+	font-size: 11px;
+	background: #FFC076;
+}
+
+
+/*********************************************
+ * HEADER
+ *********************************************/
+
+
+header {
+	position: relative;
+	width: 30%;
+	height: 27px;
+	margin: 0;
+	padding: 0 8px 8px 8px;
+	border-radius: 20px;
+	overflow: hidden;
+	z-index: 5;
+
+	color: white;
+	
+	-webkit-transition: height .22s ease-out;
+	   -moz-transition: height .22s ease-out;
+	     -o-transition: height .22s ease-out;
+	        transition: height .22s ease-out;
+
+	z-index: 1;
+    -webkit-transition: box-shadow 200ms;
+         -o-transition: box-shadow 200ms;
+            transition: box-shadow 200ms;
+    box-shadow: 6px 6px 4px rgba(161, 150, 145, 0.5);
+    margin: 10px;
+    overflow: hidden;
+}
+	header h1 {
+	font-family: "Barrio";
+	text-transform: lowercase;
+	color: white;
+	float: left;
+	left: 30px;
+	margin-top: 6px;
+	margin-left: 20px;
+	}
+	
+	header.open {
+		height: 165px;
+	}
+	
+	header .header-instruction {
+		float: left;
+		margin: 12px 0 0 15px;
+		
+		font-size: 10px;
+		font-style: italic;
+		color: #FC4600;
+		
+		-webkit-transition: opacity .18s linear;
+		   -moz-transition: opacity .18s linear;
+		     -o-transition: opacity .18s linear;
+		        transition: opacity .18s linear;
+	}
+		header.open .header-instruction {
+			opacity: 0;
+		}
+	header div.extra {
+		margin: 45px 0 0 20px;
+		clear: both;
+		
+		-webkit-transition: opacity .18s linear;
+		   -moz-transition: opacity .18s linear;
+		     -o-transition: opacity .18s linear;
+		        transition: opacity .18s linear;
+	}
+		header div.extra h3 {
+			margin-bottom: 10px;
+		}
+		header a {
+			padding: 2px 4px 2px 2px;
+			color: #999;
+			
+			-webkit-transition: all .1s ease-out;
+			   -moz-transition: all .1s ease-out;
+			     -o-transition: all .1s ease-out;
+			        transition: all .1s ease-in;
+		}
+			header a:hover {
+				padding: 2px 4px 2px 2px;
+				
+				color: #ddd;
+				background-color: #333;
+				border-radius: 1px;
+			}
+		header section {
+			height: 120px;
+			padding: 0 25px;
+			float: left;
+			
+			border-left: 1px #333 solid;
+		}
+		header p {
+			margin-bottom: 5px;
+			
+			font-size: 12px;
+			letter-spacing: 0.05em;
+		}
+		#about {
+			padding-left: 0;
+			border: none;
+		}
+		#about p.credits {
+			margin: 15px 0 2px 0;
+			
+			font-style: italic;
+			color: white;
+			font-size: 11px;
+			line-height: 1.4em;
+		}
+		#about a:hover {
+			padding: 2px 10px 2px 8px;
+		}
+		#share iframe, 
+		#share div {
+			display: inline-block;
+		}
+		#retweet-button {
+			margin-right: 6px;
+		}
+
+.no-canvas {
+	color: #999999;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 150px;
+}
+
+
+/*********************************************
+ * EXPERIMENT STYLES
+ *********************************************/
+
+#game {
+	background-color: black;
+	
+	position: absolute;
+	display: none;
+	border-radius: 20px;
+	box-shadow: 6px 6px 4px rgba(161, 150, 145, 1);
+	
+	font-family: "Roboto";
+	font-size: 15px;
+	
+	color: #EB8D68;
+	text-align: center;
+	padding-top: 5%;
+
+	
+
+}
+
+#world {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#effects {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+
+menu {
+	position: absolute;
+	display: none;
+	width: 830px;
+	height: 440px;
+	
+	background: rgba(40,60,60,0.4);
+	border-radius: 6px;
+	
+	z-index: 3;
+	
+	-webkit-box-shadow: 0 0 20px rgba(0,250,200,0.1);
+	   -moz-box-shadow: 0 0 20px rgba(0,250,200,0.1);
+	        box-shadow: 0 0 20px rgba(0,250,200,0.1);
+	
+	background-image: -moz-radial-gradient(center, circle closest-corner, rgba(50,200,200,0.3) 0%, rgba(50,200,200,0) 100%);
+	background-image: -ms-radial-gradient(center, circle closest-corner, rgba(50,200,200,0.3) 0%, rgba(50,200,200,0) 100%);
+	background-image: -o-radial-gradient(center, circle closest-corner, rgba(50,200,200,0.3) 0%, rgba(50,200,200,0) 100%);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 500, color-stop(0, rgba(50,200,200,0.3)), color-stop(1.0, rgba(50,200,200,0)));
+	background-image: -webkit-radial-gradient(center, circle closest-corner, rgba(50,200,200,0.3) 0%, rgba(50,200,200,0) 100%));
+	background-image: radial-gradient(center, circle closest-corner, rgba(50,200,200,0.3) 0%, rgba(50,200,200,0) 100%);
+}
+	
+	#menu h2 {
+		font-family: "Hanalei Fill";
+		font-size: 18px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+		.winner #menu h2,
+		.loser #menu h2 {
+			display: none;
+		}
+	
+	#menu section {
+		font-family: "Roboto";
+		display: none;
+		padding: 15px;
+		margin: 5px;
+		width: 230px;
+		background: rgba(255,207,164,0.5);
+		vertical-align: text-top;
+		border-radius: 6px;
+	}
+	
+	#menu h2 {
+		font-size: 15px;
+		font-family: "Barrio";
+		color: #EB8D68;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	
+	#menu .button {
+		display: inline-block;
+		padding: 6px 18px 6px 18px;
+		
+		
+		color: #EB8D68;
+		text-decoration: none;
+		font-family: "Roboto";
+
+		font-size: 14px;
+		
+		
+		border-radius: 20px;
+		border: 4px solid white;
+		
+		-webkit-transition: all .19s ease-out;
+	       -moz-transition: all .19s ease-out;
+	         -o-transition: all .19s ease-out;
+	            transition: all .19s ease-out;
+	}
+	
+		#menu .button:hover {
+			background: rgba(0,0,0,0.7);
+			
+			-webkit-box-shadow: 0 0 10px rgba(0,250,200,0.2);
+			   -moz-box-shadow: 0 0 10px rgba(0,250,200,0.2);
+			     -o-box-shadow: 0 0 10px rgba(0,250,200,0.2);
+			        box-shadow: 0 0 10px rgba(0,250,200,0.2);
+		}
+	
+	#menu .welcome,
+	#menu .highscore-output {
+		display: inline-block;
+	}
+	
+	.winner #menu .highscore-input {
+		display: inline-block;
+	}
+
+#start-button {
+	margin-top: 20px;
+}

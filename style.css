@@ -8,16 +8,11 @@ body {
   font-family: 'Lato';
 }
 
-.box {
-  border: 1px solid #000;
-  margin: 0 auto;
-  width: 200px;
-  height: 75px;
-  padding: 20px;
+img {
+    width: 100%;
+    height: auto;
 }
 
-/* this won't affect all spans, only spans that are inside of the box hireacrchy */
-.box span {
-  font-size: 12px;
-  color: red;
+h1 {
+    text-align: center;
 }

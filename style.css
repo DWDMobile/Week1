@@ -1,23 +1,48 @@
 @font-face {
-    font-family: 'Lato';
-    /* There are a ton of font options on Google Fonts */
-    src: url(http://fonts.googleapis.com/css?family=Lato);
+    font-family: 'Permanent Marker';
+    src: url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+
+    font-family: 'Permanent Marker';
+    src: url(http://fonts.googleapis.com/css?family=Open+Sans);
 }
 
-body {
-  font-family: 'Lato';
+.welcome {
+  opacity: 100%;
+  font-family: 'Permanent Marker', cursive;
 }
-
-.box {
-  border: 1px solid #000;
-  margin: 0 auto;
-  width: 200px;
-  height: 75px;
-  padding: 20px;
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
-
-/* this won't affect all spans, only spans that are inside of the box hireacrchy */
-.box span {
-  font-size: 12px;
-  color: red;
+.explore_bt{
+  position: absolute;
+  top: 80%;
+  left: 20%
+}
+.create_bt{
+  position: absolute;
+  top: 80%;
+  left: 80%;
+}
+.create{
+  font-family: 'Open Sans', sans-serif;
+}
+.explore{
+  font-family: 'Open Sans', sans-serif;
+}
+#header{
+  position: absolute;
+  top: 80%;
+  left: 80%;
+}
+.camera{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#footer{
+  position: absolute;
+  bottom: 80%;
+  max-width: 100%
 }

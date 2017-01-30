@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Week 1 Example</title>
-     <!-- This is super important and allows our devices to reset the zoom on mobile devices -->
+    <title>Look</title>
      <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <!-- This imports an external style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>  
-    <!-- this is document style -->
-    <style>
-      a {
-        color: purple;
-      }
-    
-      p {
-        color:blue;
-      }
-    </style>
-    <h1>This is a heading! I got this style for free!</h1>
-    <p style="font-size: 10px"> And this is a paragraph with inline style</p>
-    <a href="http://www.google.com">Oh btw, here's a link. It goes to Google.</a>
-    <ul>
-      <li>And this is a list of stuff</li>
-      <li>More stuff</li>
-      <li>Stuff x 3</li>
-    </ul>
-    <div class="box">
-      <span>I'm inside a box that gets it style from an external sheet!</span>
+
+  <body>
+    <!-- Welcome screen -->
+    <div class="welcome">
+      <span class="logo">Look (will change to logo.png)</span>
+      <button class="explore_bt">icon</button>
+      <button class="create_bt">icon</button>
     </div>
+
+    <!-- Camera feed -->
+    <div class="camera">
+      <span>the live camera feed</span>
+    </div>
+
+    <!-- Buttons for sketch ("create" screen) -->
+    <div class="create" id="footer">
+      <button class="brush">icon</button>
+      <button class="paint">icon</button>
+      <button class="undo">icon</button>
+      <button class="redo">icon</button>
+      <button class="upload">icon</button>
+    </div>
+
+    <!-- Button for publish ("create" screen)-->
+    <div class="create" id="header">
+      <button class="pin">icon</button>
+    </div>
+
+    <!-- "explore" screen)-->
+    <div class="explore">
+      <!-- images here -->
+    </div>
+
   </body>
 </html>

@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Week 1 Example</title>
+    <title>Savestyle</title>
      <!-- This is super important and allows our devices to reset the zoom on mobile devices -->
      <meta name="viewport" content="width=device-width, initial-scale=1" />
      <!-- This imports an external style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>  
-    <!-- this is document style -->
-    <style>
-      a {
-        color: purple;
-      }
-    
-      p {
-        color:blue;
-      }
-    </style>
-    <h1>This is a heading! I got this style for free!</h1>
-    <p style="font-size: 10px"> And this is a paragraph with inline style</p>
-    <a href="http://www.google.com">Oh btw, here's a link. It goes to Google.</a>
-    <ul>
-      <li>And this is a list of stuff</li>
-      <li>More stuff</li>
-      <li>Stuff x 3</li>
-    </ul>
-    <div class="box">
-      <span>I'm inside a box that gets it style from an external sheet!</span>
+  <body>
+    <div class="container">
+      <header class = "card">
+        <div class="main-menu">
+          <img src="images/menu.svg" alt="main-menu">
+        </div>
+        <h1>Savestyle</h1>
+      </header>
+      <div class="fab-container">
+        <div class="fab">
+          <img src="images/add.svg" alt="add-icon">
+        </div>
+      </div>
+      <div class="card style-card">
+        <h2 class = "card-heading">nytimes.com</h2>
+        <div class="palette">
+          <div class="color-oval black-000"></div>
+          <div class="color-oval black-999"></div>
+          <div class="color-oval white-fff"></div>
+          <div class="color-oval orange-FE996B"></div>
+          <div class="color-oval blue-6288A5"></div>
+          <div class="color-oval blue-326891"></div>
+          <div class="color-oval red-A81817"></div>
+        </div>
+        <p>
+          nyt-cheltenham, nyt-cheltenham-sh, nyt-franklin, georgia, nyt-karnak-display
+        </p>
+      </div>
+      <div class="card style-card">
+        <h2 class = "card-heading">medium.com</h2>
+        <div class="palette">
+          <div class="color-oval black-191919"></div>
+          <div class="color-oval black-333"></div>
+          <div class="color-oval black-666"></div>
+          <div class="color-oval black-8f8f8f"></div>
+          <div class="color-oval green-E6F6F0"></div>
+          <div class="color-oval green-00AB6B"></div>
+          <div class="color-oval green-1C9963"></div>
+          <div class="color-oval white-fff"></div>
+        </div>
+        <p>
+          medium-content-serif-font, Blink-mac-system-font
+        </p>
+      </div>
+      <div class="card style-card">
+        <h2 class = "card-heading">smashingmagazine.com</h2>
+        <div class="palette">
+          <div class="color-oval black-333"></div>
+          <div class="color-oval black-777"></div>
+          <div class="color-oval black-b0b0b0"></div>
+          <div class="color-oval white-fff"></div>
+          <div class="color-oval yellow-FFFF66"></div>
+          <div class="color-oval red-E43B2C"></div>
+          <div class="color-oval blue-41B7D8"></div>
+        </div>
+        <p>
+          Skolar, Proxima Nova
+        </p>
+      </div>
     </div>
   </body>
 </html>

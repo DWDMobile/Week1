@@ -1,23 +1,197 @@
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Roboto';
     /* There are a ton of font options on Google Fonts */
-    src: url(http://fonts.googleapis.com/css?family=Lato);
+    src: url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #cccccc;
 }
 
 body {
-  font-family: 'Lato';
+  font-family: 'Roboto';
+  color: #212121;
 }
 
-.box {
-  border: 1px solid #000;
-  margin: 0 auto;
-  width: 200px;
-  height: 75px;
-  padding: 20px;
+.container {
+  background-color: #f0f0f0;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
 }
 
-/* this won't affect all spans, only spans that are inside of the box hireacrchy */
-.box span {
-  font-size: 12px;
-  color: red;
+.card {
+  padding: 16px;
+}
+
+header {
+  height: 64px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0 0 0 32px;
+}
+
+.main-menu {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.fab-container {
+  position: absolute;
+  overflow: visible;
+  background-color: #000;
+  height: 1px;
+  top:100%;
+  left: 100%;
+  z-index: 100;
+}
+
+.fab {
+  width: 56px;
+  height: 56px;
+  background-color: #E64A19;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.24);
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
+.fab img {
+  margin: 21px 21px;
+}
+
+.style-card {
+  background-color: #ffffff;
+  opacity: 0.9;
+  margin-top: 8px;
+}
+
+.card-heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.palette {
+  margin-top: 16px;
+}
+
+.color-oval {
+  border-radius: 100%;
+  background-color: black;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  margin-right: 8px;
+  border: 1px solid #f0f0f0;
+}
+
+.style-card p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 8px 0 0 0;
+}
+
+.black-000 {
+  background-color: #000000;
+}
+
+.black-999 {
+  background-color: #999999;
+}
+
+.white-fff {
+  background-color: #ffffff;
+}
+
+.orange-FE996B {
+  background-color: #FE996B;
+}
+
+.blue-6288A5 {
+  background-color: #6288A5;
+}
+
+.blue-326891 {
+  background-color: #326891;
+}
+
+.red-A81817 {
+  background-color: #A81817;
+}
+
+.black-191919 {
+  background-color: #191919;
+}
+
+.black-333 {
+  background-color: #333;
+}
+
+.black-666 {
+  background-color: #666;
+}
+
+.black-8f8f8f {
+  background-color: #8f8f8f;
+}
+
+.green-E6F6F0 {
+  background-color: #E6F6F0;
+}
+
+.green-00AB6B {
+  background-color: #00AB6B;
+}
+
+.green-1C9963 {
+  background-color: #1C9963;
+}
+
+.black-777 {
+  background-color: #777;
+}
+
+.black-b0b0b0 {
+  background-color: #b0b0b0;
+}
+
+.yellow-FFFF66 {
+  background-color: #FFFF66;
+}
+
+.red-E43B2C {
+  background-color: #E43B2C;
+}
+
+.blue-41B7D8 {
+  background-color: #41B7D8;
 }

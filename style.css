@@ -1,23 +1,108 @@
-@font-face {
-    font-family: 'Lato';
-    /* There are a ton of font options on Google Fonts */
-    src: url(http://fonts.googleapis.com/css?family=Lato);
-}
-
 body {
-  font-family: 'Lato';
+  background:body-bg;
+  font-family: 'Titillium Web', sans-serif;
+
 }
 
-.box {
-  border: 1px solid #000;
-  margin: 0 auto;
-  width: 200px;
-  height: 75px;
-  padding: 20px;
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+    display: table;
+    clear: both;
+  }
+
+  
+  .active a {
+  
+    color:white;
+  }
 }
 
-/* this won't affect all spans, only spans that are inside of the box hireacrchy */
-.box span {
-  font-size: 12px;
-  color: red;
+.tab-content > div:last-child {
+  display:none;
+}
+
+
+h1 {
+  
+    display: block;
+    font-size: 4em;
+    margin-top: 1em;
+    margin-bottom: 2.33em;
+    font-weight: bold;
+
+}
+
+h2 {
+  
+    display: block;
+    font-size: 2em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+
+
+
+}
+
+
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid gray-light;
+  color: white;
+  border-radius:0;
+  
+  }
+}
+
+textarea {
+  border:2px solid $gray-light;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    
+    }
+  }
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:20pt;
+  text-transform:uppercase;
+ 
+  
+  }
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
 }

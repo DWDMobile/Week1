@@ -1,23 +1,30 @@
-@font-face {
-    font-family: 'Lato';
-    /* There are a ton of font options on Google Fonts */
-    src: url(http://fonts.googleapis.com/css?family=Lato);
-}
-
 body {
-  font-family: 'Lato';
-}
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
-.box {
-  border: 1px solid #000;
-  margin: 0 auto;
-  width: 200px;
-  height: 75px;
-  padding: 20px;
-}
+.button {
+    background-color: none;
+    border-radius: 35px;
+    border: 2px white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
 
-/* this won't affect all spans, only spans that are inside of the box hireacrchy */
-.box span {
-  font-size: 12px;
-  color: red;
+.button2 {
+    font-size: 20px;
+
+
+      }
+
+@media only screen and (max-width: 768px) {
+    background:#f6f6f6;
+    width:100%;
+
 }

@@ -9,25 +9,85 @@
   </head>
   <body>  
     <!-- this is document style -->
-    <style>
-      a {
-        color: purple;
-      }
-    
-      p {
-        color:blue;
-      }
-    </style>
-    <h1>This is a heading! I got this style for free!</h1>
-    <p style="font-size: 10px"> And this is a paragraph with inline style</p>
-    <a href="http://www.google.com">Oh btw, here's a link. It goes to Google.</a>
-    <ul>
-      <li>And this is a list of stuff</li>
-      <li>More stuff</li>
-      <li>Stuff x 3</li>
-    </ul>
-    <div class="box">
-      <span>I'm inside a box that gets it style from an external sheet!</span>
-    </div>
+   <!DOCTYPE html>
+    <div class="form">
+      <h1> Sapport</h1>
+      <ul class="tab-group">
+        
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+        
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Sign Up</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h2>Welcome Back!</h2>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block"/>Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div>
+      
+</div> 
   </body>
 </html>

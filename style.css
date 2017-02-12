@@ -1,23 +1,49 @@
-@font-face {
-    font-family: 'Lato';
-    /* There are a ton of font options on Google Fonts */
-    src: url(http://fonts.googleapis.com/css?family=Lato);
+.header {
+  background-color: grey;
+  padding: 20px 0px;
 }
 
-body {
-  font-family: 'Lato';
+.center {
+  text-align: center;
 }
 
-.box {
-  border: 1px solid #000;
-  margin: 0 auto;
-  width: 200px;
-  height: 75px;
-  padding: 20px;
+img {
+  width: 20px;
+  height: 20px;
 }
 
-/* this won't affect all spans, only spans that are inside of the box hireacrchy */
-.box span {
-  font-size: 12px;
-  color: red;
+.instruction {
+  padding: 10px;
+}
+
+.instruction p {
+  float: left;
+}
+
+.instruction img {
+  float: right;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer {
+  background-color: grey;
+  padding: 20px 0px;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  width: inherit; 
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 100%; 
+  }
 }

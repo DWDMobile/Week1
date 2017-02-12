@@ -5,29 +5,38 @@
      <!-- This is super important and allows our devices to reset the zoom on mobile devices -->
      <meta name="viewport" content="width=device-width, initial-scale=1" />
      <!-- This imports an external style sheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>  
-    <!-- this is document style -->
-    <style>
-      a {
-        color: purple;
-      }
-    
-      p {
-        color:blue;
-      }
-    </style>
-    <h1>This is a heading! I got this style for free!</h1>
-    <p style="font-size: 10px"> And this is a paragraph with inline style</p>
-    <a href="http://www.google.com">Oh btw, here's a link. It goes to Google.</a>
-    <ul>
-      <li>And this is a list of stuff</li>
-      <li>More stuff</li>
-      <li>Stuff x 3</li>
-    </ul>
-    <div class="box">
-      <span>I'm inside a box that gets it style from an external sheet!</span>
+    <div class="container">
+      <div class="row header">
+        <div class="col-md-4 col-sm-4 col-xs-4 center">
+          <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/opened_folder-48.png">
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4 center">Poppy</div>
+        <div class="col-md-4 col-sm-4 col-xs-4 center">
+          <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/info-48.png">
+        </div>
+      </div>
+
+      <div class="row instruction border">
+        <div class="col-md-12">
+          <p>Take a photo of your receipt</p>
+          <img src="https://cdn2.iconfinder.com/data/icons/4web-3/139/close-48.png">
+        </div>
+      </div>
+
+      <!-- <div class="row camera-feed"></div> -->
+
+      <div class="row offset"></div>
+
+      <div class="row footer">
+        <div class="col-md-12 center">
+          <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/photo-48.png">
+        </div>
+      </div>
     </div>
   </body>
 </html>
